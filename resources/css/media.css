@@ -1,0 +1,116 @@
+/* Big tablet to 1200px (width smaller than the 1140px row) */
+@media only screen and (max-width: 1200px) {
+    html { font-size: 18px; }
+    .row { width: 87%; }
+    .leave-msg { right: 40px; }
+    .leave-msg a { font-size: 120%; }
+    .leave-msg i { font-size: 130%; }
+    .slider-ar { opacity: 1; visibility: visible; }
+}
+
+/* Small tablet to big tablet: 768px to 1024px */
+@media only screen and (max-width: 1024px) {
+    html { font-size: 16px; }
+	.main-nav { font-size: 90%; }
+    .logo-img { height: 70px; }
+    .features h3 { font-size: 90%; }
+    .features .box p { font-size: 80%; display: none; }
+    .footer-logo img { width: 150px; }
+    .footer-grid { grid-template-columns: 200px 3fr; }
+    .plan-box li { font-size: 88%; }
+}
+
+/* All Devices which smaller than iPad: from 481px to 768px */
+@media only screen and (max-width: 768px) {
+	html { font-size: 14px; }
+    .main-nav {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        background: #000;
+        z-index: 50;
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+        visibility: hidden;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+        opacity: 0.6;
+        padding: 30px 0 30px 0;
+    }
+    .menu-active .main-nav {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    .main-nav li {
+        padding: 3% 0 3% 0;
+        font-size: 90%;
+    }
+    .navigation { padding: 10px 5% 10px 5%; }
+    .sticky .main-nav { display: none; }
+    .menu-active .sticky { background: transparent; -webkit-box-shadow: none; box-shadow: none; }
+    .menu-active .sticky .point { background: #fff;}
+    .sticky .point { background: #454545; }
+    .sticky .logo-2 {
+        display: block;
+        width: 80vw;
+        -webkit-transform:;
+        transform: 
+    }
+    .nav-bar { display: none; }
+    #cities .span-1-of-4 { width: 49.2%; }
+    #cities div:nth-child(3).col { margin-left: 0; margin-top: 30px; }
+    #cities div:nth-child(4).col { margin-top: 30px; }
+    .review h2 { letter-spacing: -1px; }
+    .works-step { margin-bottom: 30px; }
+    .dl-btn { margin-top: 50px; }
+    .slider { width: 70% !important; }
+    .slider-ar.prev-arrow { left: -8%; }
+    .slider-ar.next-arrow { right: -8%; }
+    #plans .span-1-of-3 { width: 100%; }
+    #plans .col { margin-left: 0; }
+    #plans .plan-list { width: 88vw; display: grid; grid-template-columns: repeat(4, 1fr); grid-gap: 1%; }
+    #plans div:first-child { grid-column: 2 / 4; margin-bottom: 20px; }
+    #plans div:nth-child(2) { grid-row: 2 / 3; grid-column: 1 / 3; }
+    #plans div:last-child { grid-row: 2 / 3; grid-column: 3 / 5; }
+    .footer-logo img { width: 130px; }
+    .footer-grid { position: relative; }
+    .footer-nav h3 { display: none; }
+    .footer-nav { position: absolute; left: 50px; bottom: 5px; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
+    .leave-msg { position: relative; top: 0; left: 10px; }
+    .ham-icon { display: block; }
+}
+
+@media only screen and (max-width: 768px) {
+    .btn { min-width: 120px; width: 120px; }
+    .btn-bg { width: 120px; }
+    .btn-ghost:hover ~ .btn-bg { left: 140px; }
+}
+    
+/* Smart Phone Device: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+    .footer-grid { grid-template-columns: 100px 3fr; }
+    .subscribe { grid-column: 1 / 3; margin: 20px auto 40px auto; }
+    .footer-logo img { width: 80px; }
+    .footer-center { display: block; margin: 0 auto; }
+    .site-map { margin-bottom: 20px; }
+    .footer-nav { display: block; top: 200px; bottom: 0; left: 20px; }
+    .footer-sns { display: block; }
+    .copyright { margin: 30px auto 0 auto; }
+    .leave-msg { position: relative; top: 0; left: 0px; font-size: 70%; }
+}
+
+@media only screen and (max-width: 360px) {
+    .subscribe-btn {
+        padding: 7px 10px;
+    }
+    .subscribe input[type="mail"] {
+        width: 200px;
+    }
+    .subscribe i {
+        line-height: 170%;
+    }
+}
