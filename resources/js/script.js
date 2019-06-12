@@ -72,6 +72,18 @@ $(document).ready(function() {
         }
     });
     
+    $('.button a[href^="#"]').on('click', function(e){
+        e.preventDefault();
+        
+        var target = $(this.hash);
+        
+        if (target.length) {
+            $('html, body').stop().animate({
+                scrollTop: target.offset().top -40
+            }, 1200);
+        }
+    });
+    
     $('.js--menu-trigger').on('click', function(){
         $('body').toggleClass('menu-active');
     });
@@ -100,7 +112,7 @@ $(document).ready(function() {
     $('#totop').on('click', function(){
         $('html, body').animate({
             scrollTop: 0
-        }, 500);
+        }, 800);
     });
 	
 	// lean modal setting

@@ -467,7 +467,8 @@ body.scroll .sticky {
     justify-content: space-around;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
     width: 70%;
         
 }
@@ -542,6 +543,7 @@ body.scroll .sticky {
 }
 .city-intro img {
     width: 100%;
+    height: auto;
 }
 
 .city-features {
@@ -901,6 +903,7 @@ section#footer {
 
 .subscribe input[type="mail"] {
 	padding-left: 45px;
+    line-height: 135%;
 	background: transparent;
 	background: #f6ceab;
 	border-top-right-radius: 0px;
@@ -936,6 +939,7 @@ section#footer {
 	border-bottom-right-radius: 3px;
 	text-transform: uppercase;
 	font-size: 90%;
+    line-height: 135%;
 	font-family: 'Ubuntu';
 	letter-spacing: 0.1em;
 	background: #eb9950;
@@ -950,9 +954,9 @@ section#footer {
 .subscribe i {
 	position: absolute;
 	left: 10px;
-	top: 0;
+	top: 3px;
 	font-size: 120%;
-	line-height: 145%;
+	line-height: 135%;
 }
 
 .footer-logo img {
@@ -1045,12 +1049,13 @@ section#footer {
 	font-size: 130%;
 	font-weight: 600;
 	text-transform: uppercase;
+    letter-spacing: 0px;
 }
 
 .leave-msg i {
 	color: #f6ceab;
-	font-size: 150%;
-	padding-right: 10px;
+	font-size: 140%;
+	padding-right: 5px;
 }
 
 .leave-msg::after {
