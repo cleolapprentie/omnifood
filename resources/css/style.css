@@ -902,7 +902,7 @@ section#footer {
 }
 
 .subscribe input[type="mail"] {
-	padding-left: 45px;
+    padding: 7px 10px 7px 45px;
     line-height: 135%;
 	background: transparent;
 	background: #f6ceab;
@@ -946,6 +946,7 @@ section#footer {
 	background: #eb9950;
 	outline: none;
 	border: none;
+    overflow: hidden;
 }
 
 .subscribe-btn:hover {
