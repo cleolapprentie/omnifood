@@ -915,6 +915,7 @@ section#footer {
 	font-weight: 600;
 	outline: none;
 	border: none;
+    overflow: hidden;
 }
 
 .subscribe input[type="mail"]::-webkit-input-placeholder {
