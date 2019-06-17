@@ -121,4 +121,31 @@ $(document).ready(function() {
 		overlay: 0.8,
 		closeButton: ".modal-close"
 	});
+    
+    /* Animations on scroll */
+    
+    $('.js--wp-1').waypoint(function(direction){
+        $(this.element).addClass('animated zoomIn');
+    }, {
+        offset: '70%'
+    });
+    
+    $('.js--wp-2').waypoint(function(direction){
+        $(this.element).addClass('animated fadeInUp');
+    }, {
+        offset: '70%'
+    });
+    
+    $('.js--wp-3').waypoint(function(direction){
+        $(this.element).addClass('animated bounceInLeft');
+    }, {
+        offset: '70%'
+    });
+    
+    $('.js--wp-4').waypoint(function(direction){
+        $(this.element).addClass('animated pulse');
+    }, {
+        offset: '70%'
+    });
+    
 });

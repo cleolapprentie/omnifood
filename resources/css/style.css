@@ -99,8 +99,8 @@ section:nth-child(even) {
 /* -------------------------------- */
 
 header {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.9))), url('hero.jpg') no-repeat center fixed / cover;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url('hero.jpg') no-repeat center fixed / cover;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.9))), url('img/hero.jpg') no-repeat center fixed / cover;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url('img/hero.jpg') no-repeat center fixed / cover;
     height: 100vh;
 }
 
@@ -1279,4 +1279,34 @@ button {
 
 #totop i {
     font-size: 150%;
+}
+
+/* --------------------------------- */
+/* Animations */
+/* --------------------------------- */
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+    opacity: 0;
+}
+
+.js--wp-1 { 
+    -webkit-animation-duration: 0.8s; 
+    animation-duration: 0.8s;
+}
+
+.delay-1 {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+.delay-2 {
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+
+.delay-3 {
+    -webkit-animation-delay: 0.9s;
+    animation-delay: 0.9s;
 }
